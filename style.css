@@ -1,7 +1,7 @@
-/*
-Theme Name:   	Storefront Child Theme
-Theme URI:    	https://github.com/stuartduff/storefront-child-theme
-Author:       	Stuart Duff
+/*!
+Theme Name:     Rechtsdepesche Storefront Child Theme
+Theme URI:      https://github.com/stuartduff/storefront-child-theme
+Author:         Stuart Duff
 Author URI:     http://stuartduff.com
 Template:     	storefront
 Description:  	This is a blank child theme for WooThemes StoreFront theme
@@ -19,6 +19,59 @@ along with Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normali
 FontAwesome License: SIL Open Font License - http://scripts.sil.org/OFL
 Images License: GNU General Public License v2 or later
 */
-/*
- * Add your own custom css below this text.
+/**
+ * Variables
+ *
+ * @author  Marco Di Bella
+ * @package rechtsdepesche-storefront-child-theme
  */
+/**
+ * Basic color palette
+ *
+ * @see https://www.w3schools.com/colors/colors_picker.asp
+ */
+:root {
+  --hsl--white: hsl(0 0% 100%);
+  --hsl--black: hsl(0 0% 0%);
+  --hsl--gray-100: hsl(0 0% 10%);
+  --hsl--gray-200: hsl(0 0% 20%);
+  --hsl--gray-300: hsl(0 0% 30%);
+  --hsl--gray-350: hsl(0 0% 35%);
+  --hsl--gray-400: hsl(0 0% 40%);
+  --hsl--gray-500: hsl(0 0% 50%);
+  --hsl--gray-600: hsl(0 0% 60%);
+  --hsl--gray-700: hsl(0 0% 70%);
+  --hsl--gray-800: hsl(0 0% 80%);
+  --hsl--gray-850: hsl(0 0% 85%);
+  --hsl--gray-900: hsl(0 0% 90%);
+  --hsl--gray-950: hsl(0 0% 95%);
+  --hsl--gray-970: hsl(0 0% 97%);
+  --hs--brand: 354 61%;
+  --hsl--brand-300: hsl(var(--hs--brand) 30%);
+  --hsl--brand-450: hsl(var(--hs--brand) 45%);
+  --hsl--brand-500: hsl(var(--hs--brand) 50%);
+  --hsl--brand-650: hsl(var(--hs--brand) 65%);
+  --hsl--brand-750: hsl(var(--hs--brand) 75%);
+  --hsl--brand-950: hsl(var(--hs--brand) 95%);
+  --hsl--brand-970: hsl(var(--hs--brand) 97%);
+}
+
+/**
+ * Basic HTML styling
+ *
+ * @author  Marco Di Bella
+ * @package rechtsdepesche-storefront-child-theme
+ */
+body {
+  background: var(--hsl--gray-850);
+  font-size: 16px;
+  font-weight: normal;
+  color: var(--hsl--gray-200);
+}
+
+a {
+  color: var(--hsl--brand-450);
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=style.css.map */

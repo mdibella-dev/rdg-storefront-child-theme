@@ -1,0 +1,45 @@
+/**
+ * Variables
+ *
+ * @author  Marco Di Bella
+ * @package rechtsdepesche-storefront-child-theme
+ */
+
+
+
+
+/**
+ * Basic color palette
+ *
+ * @see https://www.w3schools.com/colors/colors_picker.asp
+ */
+
+:root {
+    --hsl--white:           hsl(0 0% 100%);                 // #fff
+    --hsl--black:           hsl(0 0% 0%);                   // #000
+
+    // grayscales
+    --hsl--gray-100:        hsl(0 0% 10%);                  // #1a1a1a
+    --hsl--gray-200:        hsl(0 0% 20%);                  // #333
+    --hsl--gray-300:        hsl(0 0% 30%);                  // #4d4d4d
+    --hsl--gray-350:        hsl(0 0% 35%);                  // #595959
+    --hsl--gray-400:        hsl(0 0% 40%);                  // #666
+    --hsl--gray-500:        hsl(0 0% 50%);                  // #808080
+    --hsl--gray-600:        hsl(0 0% 60%);                  // #999
+    --hsl--gray-700:        hsl(0 0% 70%);                  // #b3b3b3
+    --hsl--gray-800:        hsl(0 0% 80%);                  // #ccc
+    --hsl--gray-850:        hsl(0 0% 85%);                  // #d9d9d9
+    --hsl--gray-900:        hsl(0 0% 90%);                  // #e6e6e6
+    --hsl--gray-950:        hsl(0 0% 95%);                  // #f2f2f2
+    --hsl--gray-970:        hsl(0 0% 97%);
+
+    // HKS16
+    --hs--brand:            354 61%;
+    --hsl--brand-300:       hsl(var(--hs--brand) 30%);
+    --hsl--brand-450:       hsl(var(--hs--brand) 45%);      // #b92d3b - the default RDG red
+    --hsl--brand-500:       hsl(var(--hs--brand) 50%);
+    --hsl--brand-650:       hsl(var(--hs--brand) 65%);
+    --hsl--brand-750:       hsl(var(--hs--brand) 75%);
+    --hsl--brand-950:       hsl(var(--hs--brand) 95%);
+    --hsl--brand-970:       hsl(var(--hs--brand) 97%);
+}

@@ -1,0 +1,20 @@
+/**
+ * Basic HTML styling
+ *
+ * @author  Marco Di Bella
+ * @package rechtsdepesche-storefront-child-theme
+ */
+
+
+body {
+    background: var(--hsl--gray-850);
+    font-size: 16px;
+    font-weight: normal;
+    color: var(--hsl--gray-200);
+}
+
+
+a {
+    color: var(--hsl--brand-450);
+    text-decoration: none;
+}
