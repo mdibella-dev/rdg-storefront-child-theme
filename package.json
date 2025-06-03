@@ -1,0 +1,12 @@
+{
+    "name": "rechtsdepesche-storefront-child-theme ",
+    "version": "1.0.0",
+    "description": "Development Scripts",
+    "scripts": {
+        "style:minify": "sass src/style/style.scss style.css --style=compressed --no-source-map",
+        "style:watch": "sass src/style/style.scss style.css --watch --update --style=expanded"
+    },
+    "devDependecies": {
+        "sass": "^1.59.3"
+    }
+}
