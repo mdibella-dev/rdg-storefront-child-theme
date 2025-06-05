@@ -7,28 +7,17 @@
  */
 
 
+/** Prevent direct access */
+
+defined( 'ABSPATH' ) or exit;
 
 
-/**
- * Storefront automatically loads the core CSS even if using a child theme as it is more efficient
- * than @importing it in the child theme style.css file.
- *
- * Uncomment the line below if you'd like to disable the Storefront Core CSS.
- *
- * If you don't plan to dequeue the Storefront Core CSS you can remove the subsequent line and as well
- * as the sf_child_theme_dequeue_style() function declaration.
- */
-//add_action( 'wp_enqueue_scripts', 'sf_child_theme_dequeue_style', 999 );
 
-/**
- * Dequeue the Storefront Parent theme core CSS
- */
-function sf_child_theme_dequeue_style() {
-    wp_dequeue_style( 'storefront-style' );
-    wp_dequeue_style( 'storefront-woocommerce-style' );
-}
+/** Turn off notices */
 
-/** Note: DO NOT! alter or remove the code above this text and only add your custom PHP functions below this text.  */
+error_reporting( E_ALL & ~E_NOTICE );
+
+
 
 
 
@@ -41,3 +30,15 @@ function sf_child_theme_dequeue_style() {
 add_action( 'get_header', function() {
     remove_action( 'storefront_sidebar', 'storefront_get_sidebar', 10 );
 } );
+
+
+
+/**
+ * Include files
+ */
+
+// Support for third-party plugins and components
+require_once get_stylesheet_directory() . '/includes/third-party/germanized.php';
+
+// Several Woocommerce settings
+require_once get_stylesheet_directory() . '/includes/woocommerce/brands.php';
