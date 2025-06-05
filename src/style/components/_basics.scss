@@ -16,5 +16,13 @@ body {
 
 a {
     color: var(--hsl--brand-450);
-    text-decoration: none;
+    text-decoration: none !important;
+}
+
+
+a:focus,
+input:focus,
+textarea:focus,
+button:focus {
+    outline: none;
 }
