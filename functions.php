@@ -1,4 +1,13 @@
 <?php
+/**
+ * The child theme's core file.
+ *
+ * @author  Marco Di Bella
+ * @package rdg-storefront-child-theme
+ */
+
+
+
 
 /**
  * Storefront automatically loads the core CSS even if using a child theme as it is more efficient
@@ -19,8 +28,16 @@ function sf_child_theme_dequeue_style() {
     wp_dequeue_style( 'storefront-woocommerce-style' );
 }
 
+/** Note: DO NOT! alter or remove the code above this text and only add your custom PHP functions below this text.  */
+
+
+
 /**
- * Note: DO NOT! alter or remove the code above this text and only add your custom PHP functions below this text.
+ * Remove the sidebar
+ *
+ * @see  https://njengah.com/woocommerce-remove-sidebar-from-product-page/
  */
 
-
+add_action( 'get_header', function() {
+    remove_action( 'storefront_sidebar', 'storefront_get_sidebar', 10 );
+} );
