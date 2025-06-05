@@ -23,7 +23,7 @@ Images License: GNU General Public License v2 or later
  * Variables
  *
  * @author  Marco Di Bella
- * @package rechtsdepesche-storefront-child-theme
+ * @package rdg-storefront-child-theme
  */
 /**
  * Basic color palette
@@ -60,7 +60,7 @@ Images License: GNU General Public License v2 or later
  * Basic HTML styling
  *
  * @author  Marco Di Bella
- * @package rechtsdepesche-storefront-child-theme
+ * @package rdg-storefront-child-theme
  */
 body {
   background: var(--hsl--gray-950);
@@ -78,7 +78,7 @@ a {
  * The header
  *
  * @author  Marco Di Bella
- * @package rechtsdepesche-storefront-child-theme
+ * @package rdg-storefront-child-theme
  */
 .site-header {
   filter: drop-shadow(0 1px 12px rgba(0, 0, 0, 0.15));
@@ -88,7 +88,7 @@ a {
  * The footer
  *
  * @author  Marco Di Bella
- * @package rechtsdepesche-storefront-child-theme
+ * @package rdg-storefront-child-theme
  */
 .site-footer {
   background: var(--hsl--gray-850);
