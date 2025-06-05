@@ -1,0 +1,17 @@
+/**
+ * The content
+ *
+ * @author  Marco Di Bella
+ * @package rdg-storefront-child-theme
+ */
+
+
+
+@media (min-width: 768px) {
+    .left-sidebar .content-area,
+    .right-sidebar .content-area {
+        width: 100%;
+        float: none;
+        margin-right: 0;
+    }
+}

@@ -81,9 +81,18 @@ a {
  * @package rdg-storefront-child-theme
  */
 .site-header {
+  background-color: var(--hsl--white);
   filter: drop-shadow(0 1px 12px rgba(0, 0, 0, 0.15));
 }
 
+/**
+ * The site-header-cart
+ */
+@media screen and (min-width: 768px) {
+  .site-header-cart .widget_shopping_cart {
+    background-color: var(--hsl--white);
+  }
+}
 /**
  * The footer
  *
@@ -92,6 +101,21 @@ a {
  */
 .site-footer {
   background: var(--hsl--gray-850);
+}
+
+/**
+ * The content
+ *
+ * @author  Marco Di Bella
+ * @package rdg-storefront-child-theme
+ */
+@media (min-width: 768px) {
+  .left-sidebar .content-area,
+  .right-sidebar .content-area {
+    width: 100%;
+    float: none;
+    margin-right: 0;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
