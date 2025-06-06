@@ -1,0 +1,36 @@
+/**
+ * Settings related to the product page
+ *
+ * @author  Marco Di Bella
+ * @package rdg-storefront-child-theme
+ */
+
+
+.woocommerce-tabs ul.tabs {
+    border-top: 1px solid var(--hsl--gray-700);
+}
+
+.woocommerce-tabs ul.tabs li {
+    border-bottom: 1px solid var(--hsl--gray-700);
+}
+
+.woocommerce-tabs ul.tabs li a {
+    color: var(--hsl--gray-200);
+    padding: 1em;
+}
+
+.woocommerce-tabs ul.tabs li.active a {
+    font-weight: bold;
+    color: var(--hsl--gray-200);
+    background: rgba(255,255,255,.3);
+}
+
+.woocommerce-tabs ul.tabs li::after {
+    right: 1em;
+}
+
+@media (min-width: 768px) {
+    .woocommerce-tabs ul.tabs li::after {
+        opacity: .25;
+    }
+}

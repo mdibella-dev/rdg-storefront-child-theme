@@ -1,0 +1,33 @@
+/**
+ * Settings related to the my-account page
+ *
+ * @author  Marco Di Bella
+ * @package rdg-storefront-child-theme
+ */
+
+
+.hentry .entry-content .woocommerce-MyAccount-navigation {
+
+    ul {
+        border-top: 1px solid var(--hsl--gray-700);
+    }
+
+    ul li {
+        border-bottom: 1px solid var(--hsl--gray-700);
+    }
+
+    ul li.woocommerce-MyAccount-navigation-link a {
+        color: var(--hsl--gray-200);
+        padding: 1em;
+    }
+
+    ul li.woocommerce-MyAccount-navigation-link:not(.is-active) a:hover::before {
+        opacity: .25;
+    }
+
+    ul li.woocommerce-MyAccount-navigation-link.is-active a {
+        font-weight: bold;
+        color: var(--hsl--gray-200);
+        background: rgba(255,255,255,.3);
+    }
+}

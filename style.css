@@ -124,5 +124,63 @@ button:focus {
     margin-right: 0;
   }
 }
+/**
+ * Settings related to the product page
+ *
+ * @author  Marco Di Bella
+ * @package rdg-storefront-child-theme
+ */
+.woocommerce-tabs ul.tabs {
+  border-top: 1px solid var(--hsl--gray-700);
+}
+
+.woocommerce-tabs ul.tabs li {
+  border-bottom: 1px solid var(--hsl--gray-700);
+}
+
+.woocommerce-tabs ul.tabs li a {
+  color: var(--hsl--gray-200);
+  padding: 1em;
+}
+
+.woocommerce-tabs ul.tabs li.active a {
+  font-weight: bold;
+  color: var(--hsl--gray-200);
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.woocommerce-tabs ul.tabs li::after {
+  right: 1em;
+}
+
+@media (min-width: 768px) {
+  .woocommerce-tabs ul.tabs li::after {
+    opacity: 0.25;
+  }
+}
+/**
+ * Settings related to the my-account page
+ *
+ * @author  Marco Di Bella
+ * @package rdg-storefront-child-theme
+ */
+.hentry .entry-content .woocommerce-MyAccount-navigation ul {
+  border-top: 1px solid var(--hsl--gray-700);
+}
+.hentry .entry-content .woocommerce-MyAccount-navigation ul li {
+  border-bottom: 1px solid var(--hsl--gray-700);
+}
+.hentry .entry-content .woocommerce-MyAccount-navigation ul li.woocommerce-MyAccount-navigation-link a {
+  color: var(--hsl--gray-200);
+  padding: 1em;
+}
+.hentry .entry-content .woocommerce-MyAccount-navigation ul li.woocommerce-MyAccount-navigation-link:not(.is-active) a:hover::before {
+  opacity: 0.25;
+}
+.hentry .entry-content .woocommerce-MyAccount-navigation ul li.woocommerce-MyAccount-navigation-link.is-active a {
+  font-weight: bold;
+  color: var(--hsl--gray-200);
+  background: rgba(255, 255, 255, 0.3);
+}
 
 /*# sourceMappingURL=style.css.map */
