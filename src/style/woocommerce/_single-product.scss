@@ -53,7 +53,6 @@
 }
 
 
-
 // Product Gallery
 @media (min-width: 768px) {
     .single-product div.product .woocommerce-product-gallery {
@@ -70,9 +69,34 @@
     }
 }
 
+.woocommerce-product-gallery__trigger {
+    display: none !important;
+}
 
-// Related
+
+// The product
+.single-product div.product {
+    overflow: visible;
+}
+
+
+// Related / Upsells
 .related {
     background: #f6f6f6;
-    padding: 2rem;
+    padding: 2rem var(--main-px);
+    margin-left: calc(-1 * var(--main-px));
+    margin-right: calc(-1 * var(--main-px));
+    margin-top: var(--main-py);
+}
+
+.related > h2:first-child,
+.upsells > h2:first-child {
+    font-size: 1.618em;
+    text-align: center;
+    padding: 1rem;
+
+    @media (min-width: 768px) {
+        font-size: 2.2em;
+        padding: 2rem;
+    }
 }
