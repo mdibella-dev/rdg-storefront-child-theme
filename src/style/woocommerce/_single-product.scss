@@ -34,8 +34,31 @@
     }
 }
 
+@media (min-width: 768px) {
+    .woocommerce-tabs .panel {
+        width: 62.7058823529%;
+    }
+}
+
 
 // Product Meta
 .single-product div.product .product_meta {
     border-top: 1px solid var(--color--separator);
+}
+
+
+// Product Gallery
+@media (min-width: 768px) {
+    .single-product div.product .woocommerce-product-gallery {
+        width: 29.4117647059%;
+        float: left;
+        margin-right: 5.8823529412%;
+        margin-bottom: 3.706325903em;
+    }
+}
+
+@media (min-width: 768px) {
+    .single-product div.product .summary {
+        width: 62.7058823529%;
+    }
 }

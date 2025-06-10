@@ -232,10 +232,28 @@ input[type=submit].alt:hover,
   }
 }
 
+@media (min-width: 768px) {
+  .woocommerce-tabs .panel {
+    width: 62.7058823529%;
+  }
+}
 .single-product div.product .product_meta {
   border-top: 1px solid var(--color--separator);
 }
 
+@media (min-width: 768px) {
+  .single-product div.product .woocommerce-product-gallery {
+    width: 29.4117647059%;
+    float: left;
+    margin-right: 5.8823529412%;
+    margin-bottom: 3.706325903em;
+  }
+}
+@media (min-width: 768px) {
+  .single-product div.product .summary {
+    width: 62.7058823529%;
+  }
+}
 /**
  * Settings related to the my-account page
  *
