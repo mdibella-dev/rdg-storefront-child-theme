@@ -48,11 +48,12 @@
 /**
  * Semantic colors
  */
+
 :root {
     --color--separator:          var(--hsl--gray-850);
     --color--tab-bg--active:     var(--hsl--gray-950);
+    --color--btn-bg:             var(--hsl--brand-650);
 }
-
 
 
 /**
@@ -60,5 +61,20 @@
  */
 
 :root {
-    --full-width:           1400px
+    --full-width:               1400px;
+    --main-px:                  2rem;
+    --main-py:                  1rem;
+}
+
+@media (min-width: 768px) {
+    :root {
+        --main-px:              3rem;
+        --main-py:              2rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    :root {
+        --main-py:              3rem;
+    }
 }

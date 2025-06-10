@@ -24,18 +24,13 @@
 
 
 .site-main {
-    padding: 1rem 2rem;
+    padding: var(--main-py) var(--main-px);
     background: #fff;
     box-shadow: 0 2px 20px -10px rgba(99,114,130,.15);
     margin-bottom: 2rem;
 
     @media (min-width: 768px) {
-        padding: 2rem 3rem;
         margin-bottom: 5rem;
-    }
-
-    @media (min-width: 1200px) {
-        padding: 3rem;
     }
 }
 

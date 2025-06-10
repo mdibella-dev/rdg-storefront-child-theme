@@ -43,8 +43,15 @@
 
 // Product Meta
 .single-product div.product .product_meta {
-    border-top: 1px solid var(--color--separator);
+    border-top: none;
+    display: flex;
+    gap: 1rem;
 }
+
+.single-product div.product p.price {
+    font-weight: bold;
+}
+
 
 
 // Product Gallery
@@ -61,4 +68,11 @@
     .single-product div.product .summary {
         width: 62.7058823529%;
     }
+}
+
+
+// Related
+.related {
+    background: #f6f6f6;
+    padding: 2rem;
 }

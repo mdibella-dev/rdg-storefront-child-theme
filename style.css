@@ -62,15 +62,29 @@ Images License: GNU General Public License v2 or later
 :root {
   --color--separator: var(--hsl--gray-850);
   --color--tab-bg--active: var(--hsl--gray-950);
+  --color--btn-bg: var(--hsl--brand-650);
 }
 
 /**
  * Basic settings
  */
 :root {
-  --full-width: 1400px ;
+  --full-width: 1400px;
+  --main-px: 2rem;
+  --main-py: 1rem;
 }
 
+@media (min-width: 768px) {
+  :root {
+    --main-px: 3rem;
+    --main-py: 2rem;
+  }
+}
+@media (min-width: 1200px) {
+  :root {
+    --main-py: 3rem;
+  }
+}
 /**
  * Basic HTML styling
  *
@@ -107,7 +121,7 @@ input[type=submit],
   border: 0;
   border-radius: 5px;
   color: var(--hsl--white);
-  background: var(--hsl--brand-450);
+  background: var(--color--btn-bg);
   text-transform: uppercase;
 }
 button:hover, button.alt, button.alt:hover,
@@ -133,7 +147,7 @@ input[type=submit].alt:hover,
 .added_to_cart.alt,
 .added_to_cart.alt:hover {
   color: var(--hsl--white);
-  background: var(--hsl--brand-450);
+  background: var(--color--btn-bg);
 }
 
 /**
@@ -177,20 +191,14 @@ input[type=submit].alt:hover,
   }
 }
 .site-main {
-  padding: 1rem 2rem;
+  padding: var(--main-py) var(--main-px);
   background: #fff;
   box-shadow: 0 2px 20px -10px rgba(99, 114, 130, 0.15);
   margin-bottom: 2rem;
 }
 @media (min-width: 768px) {
   .site-main {
-    padding: 2rem 3rem;
     margin-bottom: 5rem;
-  }
-}
-@media (min-width: 1200px) {
-  .site-main {
-    padding: 3rem;
   }
 }
 
@@ -238,7 +246,13 @@ input[type=submit].alt:hover,
   }
 }
 .single-product div.product .product_meta {
-  border-top: 1px solid var(--color--separator);
+  border-top: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.single-product div.product p.price {
+  font-weight: bold;
 }
 
 @media (min-width: 768px) {
@@ -254,6 +268,31 @@ input[type=submit].alt:hover,
     width: 62.7058823529%;
   }
 }
+.related {
+  background: #f6f6f6;
+  padding: 2rem;
+}
+
+/**
+ * Settings related to product lists
+ *
+ * @author  Marco Di Bella
+ * @package rdg-storefront-child-theme
+ */
+ul.products li.product .button,
+ul.products .wc-block-grid__product .button,
+.wc-block-grid__products li.product .button,
+.wc-block-grid__products .wc-block-grid__product {
+  display: block;
+  width: 50%;
+  margin: 8px auto 0;
+}
+
+ul.products li.product .price {
+  font-size: 150%;
+  font-weight: bold;
+}
+
 /**
  * Settings related to the my-account page
  *
@@ -324,7 +363,7 @@ p.no-comments {
 .site-header-cart .widget_shopping_cart a.button,
 .site-header-cart .widget_shopping_cart a.button:hover {
   color: var(--hsl--white);
-  background: var(--hsl--brand-450);
+  background: var(--color--btn-bg);
 }
 
 /**
