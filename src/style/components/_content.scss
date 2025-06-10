@@ -33,4 +33,13 @@
         padding: 2rem 3rem;
         margin-bottom: 5rem;
     }
+
+    @media (min-width: 1200px) {
+        padding: 3rem;
+    }
+}
+
+
+.site-main > *:last-child {
+    margin-bottom: 0 !important;
 }
