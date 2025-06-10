@@ -1,0 +1,16 @@
+/**
+ * The sorting line
+ *
+ * @author  Marco Di Bella
+ * @package rdg-storefront-child-theme
+ */
+
+
+.storefront-sorting {
+    font-size: 1rem;
+    margin: 2rem 0;
+
+    @media (min-width: 768px) {
+        margin-bottom: 3rem;
+    }
+}
