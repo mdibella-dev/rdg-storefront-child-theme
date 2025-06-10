@@ -1,0 +1,42 @@
+/**
+ * Settings related to the mini-cart
+ *
+ * @author  Marco Di Bella
+ * @package rdg-storefront-child-theme
+ */
+
+
+.product_list_widget li {
+    border-bottom: 1px solid var(--color--separator);
+}
+
+
+.widget_shopping_cart p.total {
+    border-bottom: none;
+}
+
+
+
+/**
+ * The site-header-cart
+ */
+
+@media screen and (min-width: 768px) {
+    .site-header-cart .widget_shopping_cart {
+        background-color: var(--hsl--white);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .site-header-cart .widget_shopping_cart .buttons,
+    .site-header-cart .widget_shopping_cart .total {
+        background-color: var(--hsl--gray-950);
+    }
+}
+
+
+.site-header-cart .widget_shopping_cart a.button,
+.site-header-cart .widget_shopping_cart a.button:hover {
+    color: var(--hsl--white);
+    background: var(--hsl--brand-450);
+}

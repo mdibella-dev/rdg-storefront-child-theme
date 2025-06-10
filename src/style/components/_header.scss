@@ -10,15 +10,3 @@
     background-color: var(--hsl--white);
     filter: drop-shadow(0 1px 12px rgba(0, 0, 0, 0.15));
 }
-
-
-
-/**
- * The site-header-cart
- */
-
-@media screen and (min-width: 768px) {
-    .site-header-cart .widget_shopping_cart {
-        background-color: var(--hsl--white);
-    }
-}

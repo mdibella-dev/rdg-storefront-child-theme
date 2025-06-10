@@ -57,6 +57,21 @@ Images License: GNU General Public License v2 or later
 }
 
 /**
+ * Semantic colors
+ */
+:root {
+  --color--separator: var(--hsl--gray-850);
+  --color--tab-bg--active: var(--hsl--gray-950);
+}
+
+/**
+ * Basic settings
+ */
+:root {
+  --full-width: 1400px ;
+}
+
+/**
  * Basic HTML styling
  *
  * @author  Marco Di Bella
@@ -81,6 +96,46 @@ button:focus {
   outline: none;
 }
 
+button,
+input[type=button],
+input[type=reset],
+input[type=submit],
+.button,
+.wc-block-grid__products .wc-block-grid__product .wp-block-button__link,
+.widget a.button,
+.added_to_cart {
+  border: 0;
+  border-radius: 5px;
+  color: var(--hsl--white);
+  background: var(--hsl--brand-450);
+  text-transform: uppercase;
+}
+button:hover, button.alt, button.alt:hover,
+input[type=button]:hover,
+input[type=button].alt,
+input[type=button].alt:hover,
+input[type=reset]:hover,
+input[type=reset].alt,
+input[type=reset].alt:hover,
+input[type=submit]:hover,
+input[type=submit].alt,
+input[type=submit].alt:hover,
+.button:hover,
+.button.alt,
+.button.alt:hover,
+.wc-block-grid__products .wc-block-grid__product .wp-block-button__link:hover,
+.wc-block-grid__products .wc-block-grid__product .wp-block-button__link.alt,
+.wc-block-grid__products .wc-block-grid__product .wp-block-button__link.alt:hover,
+.widget a.button:hover,
+.widget a.button.alt,
+.widget a.button.alt:hover,
+.added_to_cart:hover,
+.added_to_cart.alt,
+.added_to_cart.alt:hover {
+  color: var(--hsl--white);
+  background: var(--hsl--brand-450);
+}
+
 /**
  * The header
  *
@@ -92,14 +147,6 @@ button:focus {
   filter: drop-shadow(0 1px 12px rgba(0, 0, 0, 0.15));
 }
 
-/**
- * The site-header-cart
- */
-@media screen and (min-width: 768px) {
-  .site-header-cart .widget_shopping_cart {
-    background-color: var(--hsl--white);
-  }
-}
 /**
  * The footer
  *
@@ -124,6 +171,33 @@ button:focus {
     margin-right: 0;
   }
 }
+@media (min-width: 768px) {
+  .col-full {
+    max-width: var(--full-width);
+  }
+}
+.site-main {
+  padding: 1rem 2rem;
+  background: #fff;
+  box-shadow: 0 2px 20px -10px rgba(99, 114, 130, 0.15);
+  margin-bottom: 2rem;
+}
+@media (min-width: 768px) {
+  .site-main {
+    padding: 2rem 3rem;
+    margin-bottom: 5rem;
+  }
+}
+@media (min-width: 1200px) {
+  .site-main {
+    padding: 3rem;
+  }
+}
+
+.site-main > *:last-child {
+  margin-bottom: 0 !important;
+}
+
 /**
  * Settings related to the product page
  *
@@ -131,11 +205,11 @@ button:focus {
  * @package rdg-storefront-child-theme
  */
 .woocommerce-tabs ul.tabs {
-  border-top: 1px solid var(--hsl--gray-700);
+  border-top: 1px solid var(--color--separator);
 }
 
 .woocommerce-tabs ul.tabs li {
-  border-bottom: 1px solid var(--hsl--gray-700);
+  border-bottom: 1px solid var(--color--separator);
 }
 
 .woocommerce-tabs ul.tabs li a {
@@ -146,18 +220,22 @@ button:focus {
 .woocommerce-tabs ul.tabs li.active a {
   font-weight: bold;
   color: var(--hsl--gray-200);
-  background: rgba(255, 255, 255, 0.3);
+  background: var(--color--tab-bg--active);
 }
 
 .woocommerce-tabs ul.tabs li::after {
   right: 1em;
 }
-
 @media (min-width: 768px) {
   .woocommerce-tabs ul.tabs li::after {
     opacity: 0.25;
   }
 }
+
+.single-product div.product .product_meta {
+  border-top: 1px solid var(--color--separator);
+}
+
 /**
  * Settings related to the my-account page
  *
@@ -165,10 +243,10 @@ button:focus {
  * @package rdg-storefront-child-theme
  */
 .hentry .entry-content .woocommerce-MyAccount-navigation ul {
-  border-top: 1px solid var(--hsl--gray-700);
+  border-top: 1px solid var(--color--separator);
 }
 .hentry .entry-content .woocommerce-MyAccount-navigation ul li {
-  border-bottom: 1px solid var(--hsl--gray-700);
+  border-bottom: 1px solid var(--color--separator);
 }
 .hentry .entry-content .woocommerce-MyAccount-navigation ul li.woocommerce-MyAccount-navigation-link a {
   color: var(--hsl--gray-200);
@@ -180,7 +258,88 @@ button:focus {
 .hentry .entry-content .woocommerce-MyAccount-navigation ul li.woocommerce-MyAccount-navigation-link.is-active a {
   font-weight: bold;
   color: var(--hsl--gray-200);
-  background: rgba(255, 255, 255, 0.3);
+  background: var(--color--tab-bg--active);
+}
+
+/**
+ * Settings related to notices
+ *
+ * @author  Marco Di Bella
+ * @package rdg-storefront-child-theme
+ */
+.woocommerce-message,
+.woocommerce-info,
+.woocommerce-error,
+.woocommerce-noreviews,
+p.no-comments {
+  border-radius: 5px;
+}
+
+/**
+ * Settings related to the mini-cart
+ *
+ * @author  Marco Di Bella
+ * @package rdg-storefront-child-theme
+ */
+.product_list_widget li {
+  border-bottom: 1px solid var(--color--separator);
+}
+
+.widget_shopping_cart p.total {
+  border-bottom: none;
+}
+
+/**
+ * The site-header-cart
+ */
+@media screen and (min-width: 768px) {
+  .site-header-cart .widget_shopping_cart {
+    background-color: var(--hsl--white);
+  }
+}
+@media screen and (min-width: 768px) {
+  .site-header-cart .widget_shopping_cart .buttons,
+  .site-header-cart .widget_shopping_cart .total {
+    background-color: var(--hsl--gray-950);
+  }
+}
+.site-header-cart .widget_shopping_cart a.button,
+.site-header-cart .widget_shopping_cart a.button:hover {
+  color: var(--hsl--white);
+  background: var(--hsl--brand-450);
+}
+
+/**
+ * The breadcrumb
+ *
+ * @author  Marco Di Bella
+ * @package rdg-storefront-child-theme
+ */
+.storefront-breadcrumb {
+  padding: 2rem 0;
+  margin: 0;
+}
+@media (min-width: 768px) {
+  .storefront-breadcrumb {
+    padding: 3rem 0;
+    margin: 0;
+  }
+}
+
+/**
+ * The sorting line
+ *
+ * @author  Marco Di Bella
+ * @package rdg-storefront-child-theme
+ */
+.storefront-sorting {
+  font-size: 1rem;
+  margin: 2rem 0;
+}
+@media (min-width: 768px) {
+  .storefront-sorting {
+    margin-bottom: 3rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
