@@ -46,6 +46,16 @@
 
 
 /**
+ * Semantic colors
+ */
+:root {
+    --color--separator:          var(--hsl--gray-850);
+    --color--tab-bg--active:     var(--hsl--gray-950);
+}
+
+
+
+/**
  * Basic settings
  */
 

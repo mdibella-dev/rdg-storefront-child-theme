@@ -6,12 +6,13 @@
  */
 
 
+// Tabs
 .woocommerce-tabs ul.tabs {
-    border-top: 1px solid var(--hsl--gray-700);
+    border-top: 1px solid var(--color--separator);
 }
 
 .woocommerce-tabs ul.tabs li {
-    border-bottom: 1px solid var(--hsl--gray-700);
+    border-bottom: 1px solid var(--color--separator);
 }
 
 .woocommerce-tabs ul.tabs li a {
@@ -22,15 +23,19 @@
 .woocommerce-tabs ul.tabs li.active a {
     font-weight: bold;
     color: var(--hsl--gray-200);
-    background: rgba(255,255,255,.3);
+    background: var(--color--tab-bg--active);
 }
 
 .woocommerce-tabs ul.tabs li::after {
     right: 1em;
-}
 
-@media (min-width: 768px) {
-    .woocommerce-tabs ul.tabs li::after {
+    @media (min-width: 768px) {
         opacity: .25;
     }
+}
+
+
+// Product Meta
+.single-product div.product .product_meta {
+    border-top: 1px solid var(--color--separator);
 }

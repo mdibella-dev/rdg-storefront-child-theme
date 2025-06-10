@@ -1,0 +1,15 @@
+/**
+ * Settings related to notices
+ *
+ * @author  Marco Di Bella
+ * @package rdg-storefront-child-theme
+ */
+
+
+.woocommerce-message,
+.woocommerce-info,
+.woocommerce-error,
+.woocommerce-noreviews,
+p.no-comments {
+    border-radius: 5px;
+}
