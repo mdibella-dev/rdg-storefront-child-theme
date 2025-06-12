@@ -7,6 +7,15 @@
 
 
 
+ ul.products li.product,
+ ul.products .wc-block-grid__product,
+ .wc-block-grid__products li.product,
+ .wc-block-grid__products .wc-block-grid__product {
+     margin-bottom: 2.235801032em;
+     margin-top: 2.235801032em;
+}
+
+
 ul.products li.product .button,
 ul.products .wc-block-grid__product .button,
 .wc-block-grid__products li.product .button,
@@ -16,8 +25,18 @@ ul.products .wc-block-grid__product .button,
     margin: 8px auto 0;
 }
 
-
 ul.products li.product .price {
     font-size: 150%;
     font-weight: bold;
+    margin-bottom: 0 !important;
+}
+
+ul.products li.product .tax-info {
+    margin-top: 0 !important;
+}
+
+
+// The headline
+.woocommerce-products-header__title {
+    text-align: center;
 }
