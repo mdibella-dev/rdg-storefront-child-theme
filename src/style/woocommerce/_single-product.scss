@@ -41,7 +41,7 @@
 }
 
 
-// Product Meta
+// Product meta
 .single-product div.product .product_meta {
     border-top: none;
     display: flex;
@@ -53,7 +53,7 @@
 }
 
 
-// Product Gallery
+// Product gallery
 @media (min-width: 768px) {
     .single-product div.product .woocommerce-product-gallery {
         width: 29.4117647059%;
@@ -72,6 +72,7 @@
 .woocommerce-product-gallery__trigger {
     display: none !important;
 }
+
 
 
 // The product
