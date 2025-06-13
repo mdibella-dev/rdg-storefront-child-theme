@@ -33,6 +33,7 @@ Images License: GNU General Public License v2 or later
 :root {
   --hsl--white: hsl(0 0% 100%);
   --hsl--black: hsl(0 0% 0%);
+  --hsl--green: hsl(152.1, 79.5%, 38.6%);
   --hsl--gray-100: hsl(0 0% 10%);
   --hsl--gray-200: hsl(0 0% 20%);
   --hsl--gray-300: hsl(0 0% 30%);
@@ -385,7 +386,19 @@ ul.products li.product .tax-info {
 .woocommerce-error,
 .woocommerce-noreviews,
 p.no-comments {
-  border-radius: 5px;
+  border-radius: 0;
+  outline: 0;
+  border-left: 0;
+}
+
+.woocommerce-message {
+  background-color: var(--hsl--green);
+}
+
+.site-content > .col-full > .woocommerce > .woocommerce-message:first-child,
+.site-content > .col-full > .woocommerce > .woocommerce-info:first-child,
+.site-content > .col-full > .woocommerce > .woocommerce-error:first-child {
+  margin-top: 0;
 }
 
 /**

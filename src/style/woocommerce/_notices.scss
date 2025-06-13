@@ -11,5 +11,19 @@
 .woocommerce-error,
 .woocommerce-noreviews,
 p.no-comments {
-    border-radius: 5px;
+    border-radius: 0;
+    outline: 0;
+    border-left: 0;
+}
+
+
+.woocommerce-message {
+    background-color: var(--hsl--green);
+}
+
+
+.site-content > .col-full > .woocommerce > .woocommerce-message:first-child,
+.site-content > .col-full > .woocommerce > .woocommerce-info:first-child,
+.site-content > .col-full > .woocommerce > .woocommerce-error:first-child {
+    margin-top: 0;
 }
