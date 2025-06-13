@@ -7,11 +7,12 @@
 
 
 .storefront-breadcrumb {
-    padding: 2rem 0;
+    padding: var(--breadcrumb-py) 0;
     margin: 0;
 
+    // Needed to overwrite rules
     @media (min-width: 768px) {
-        padding: 3rem 0;
+        padding: var(--breadcrumb-py) 0;
         margin: 0;
     }
 }

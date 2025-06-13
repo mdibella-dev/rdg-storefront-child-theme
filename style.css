@@ -70,6 +70,7 @@ Images License: GNU General Public License v2 or later
  */
 :root {
   --full-width: 1400px;
+  --breadcrumb-py: 2rem;
   --main-px: 2rem;
   --main-py: 1rem;
 }
@@ -78,6 +79,7 @@ Images License: GNU General Public License v2 or later
   :root {
     --main-px: 3rem;
     --main-py: 2rem;
+    --breadcrumb-py: 3rem;
   }
 }
 @media (min-width: 1200px) {
@@ -159,6 +161,18 @@ input[type=submit].alt:hover,
 .site-header {
   background-color: var(--hsl--white);
   filter: drop-shadow(0 1px 12px rgba(0, 0, 0, 0.15));
+}
+
+.home.blog .site-header,
+.home.page:not(.page-template-template-homepage) .site-header,
+.home.post-type-archive-product .site-header {
+  margin-bottom: var(--breadcrumb-py);
+}
+
+.home.blog .site-header:has(+ .storefront-breadcrumb),
+.home.page:not(.page-template-template-homepage) .site-header:has(+ .storefront-breadcrumb),
+.home.post-type-archive-product .site-header:has(+ .storefront-breadcrumb) {
+  margin-bottom: 0;
 }
 
 /**
@@ -304,18 +318,35 @@ input[type=submit].alt:hover,
  * @author  Marco Di Bella
  * @package rdg-storefront-child-theme
  */
+ul.products li.product,
+ul.products .wc-block-grid__product,
+.wc-block-grid__products li.product,
+.wc-block-grid__products .wc-block-grid__product {
+  margin-bottom: 2.235801032em;
+  margin-top: 2.235801032em;
+}
+
 ul.products li.product .button,
 ul.products .wc-block-grid__product .button,
 .wc-block-grid__products li.product .button,
 .wc-block-grid__products .wc-block-grid__product {
   display: block;
-  width: 50%;
+  width: 25%;
   margin: 8px auto 0;
 }
 
 ul.products li.product .price {
   font-size: 150%;
   font-weight: bold;
+  margin-bottom: 0 !important;
+}
+
+ul.products li.product .tax-info {
+  margin-top: 0 !important;
+}
+
+.woocommerce-products-header__title {
+  text-align: center;
 }
 
 /**
@@ -398,12 +429,12 @@ p.no-comments {
  * @package rdg-storefront-child-theme
  */
 .storefront-breadcrumb {
-  padding: 2rem 0;
+  padding: var(--breadcrumb-py) 0;
   margin: 0;
 }
 @media (min-width: 768px) {
   .storefront-breadcrumb {
-    padding: 3rem 0;
+    padding: var(--breadcrumb-py) 0;
     margin: 0;
   }
 }

@@ -10,3 +10,16 @@
     background-color: var(--hsl--white);
     filter: drop-shadow(0 1px 12px rgba(0, 0, 0, 0.15));
 }
+
+
+.home.blog .site-header,
+.home.page:not(.page-template-template-homepage) .site-header,
+.home.post-type-archive-product .site-header {
+    margin-bottom: var(--breadcrumb-py);
+}
+
+.home.blog .site-header:has(+ .storefront-breadcrumb),
+.home.page:not(.page-template-template-homepage) .site-header:has(+ .storefront-breadcrumb),
+.home.post-type-archive-product .site-header:has(+ .storefront-breadcrumb) {
+    margin-bottom: 0;
+}

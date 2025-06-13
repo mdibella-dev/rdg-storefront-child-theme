@@ -62,6 +62,7 @@
 
 :root {
     --full-width:               1400px;
+    --breadcrumb-py:            2rem;
     --main-px:                  2rem;
     --main-py:                  1rem;
 }
@@ -70,6 +71,7 @@
     :root {
         --main-px:              3rem;
         --main-py:              2rem;
+        --breadcrumb-py:        3rem;
     }
 }
 
