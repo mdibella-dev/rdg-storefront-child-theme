@@ -304,12 +304,14 @@ input[type=submit].alt:hover,
   font-size: 1.618em;
   text-align: center;
   padding: 1rem;
+  margin-bottom: 0;
 }
 @media (min-width: 768px) {
   .related > h2:first-child,
   .upsells > h2:first-child {
     font-size: 2.2em;
     padding: 2rem;
+    margin-bottom: 0;
   }
 }
 
