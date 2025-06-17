@@ -153,6 +153,10 @@ input[type=submit].alt:hover,
   background: var(--color--btn-bg);
 }
 
+img {
+  border-radius: unset;
+}
+
 /**
  * The header
  *
@@ -350,6 +354,10 @@ ul.products li.product .tax-info {
 
 .woocommerce-products-header__title {
   text-align: center;
+}
+
+.woocommerce-loop-product__link > div {
+  background: #eee;
 }
 
 /**

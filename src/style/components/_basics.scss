@@ -28,9 +28,6 @@ button:focus {
 }
 
 
-
-
-
 button,
 input[type="button"],
 input[type="reset"],
@@ -53,4 +50,10 @@ input[type="submit"],
         color: var(--hsl--white);
         background: var(--color--btn-bg);
     }
+}
+
+
+
+img {
+    border-radius: unset;
 }

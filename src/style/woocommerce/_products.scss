@@ -40,3 +40,9 @@ ul.products li.product .tax-info {
 .woocommerce-products-header__title {
     text-align: center;
 }
+
+
+// The image background
+.woocommerce-loop-product__link > div {
+    background: #eee;
+}
