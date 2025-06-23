@@ -1,0 +1,14 @@
+/**
+ * Download related styles
+ *
+ * @author  Marco Di Bella
+ * @package rdg-storefront-child-theme
+ */
+
+
+.download-box-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 1rem;
+}
